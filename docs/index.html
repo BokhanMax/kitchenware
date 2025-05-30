@@ -182,26 +182,43 @@
         </div>
     </section>
 
+<div class="relative w-full overflow-hidden rounded-md shadow-md">
+    <div class="relative h-64 flex transition-transform duration-500 ease-in-out" id="slider-container">
+        <div class="min-w-full flex-shrink-0 bg-gray-200 flex items-center justify-center text-gray-500 text-lg">
+            Баннер 1
+        </div>
+        <div class="min-w-full flex-shrink-0 bg-gray-300 flex items-center justify-center text-gray-500 text-lg">
+            Баннер 2
+        </div>
+        <div class="min-w-full flex-shrink-0 bg-gray-400 flex items-center justify-center text-gray-500 text-lg">
+            Баннер 3
+        </div>
+    </div>
+
+    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2" id="slider-indicators">
+        <button class="w-3 h-3 rounded-full bg-primary-blue focus:outline-none active" data-slide="0" style="--primary-blue: #3B82F6;"></button>
+        <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none" data-slide="1" style="--primary-blue: #3B82F6;"></button>
+        <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none" data-slide="2" style="--primary-blue: #3B82F6;"></button>
+    </div>
+</div>
+
 	<!-- Category Tabs -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
             <!-- Tab Navigation -->
             <div class="border-b border-gray-100">
-                <nav class="flex space-x-8 px-6" aria-label="Tabs">
+                <nav class="flex space-x-8 px-6 justify-center" aria-label="Tabs">
                     <button onclick="showTab('cookware')" class="tab-button active py-4 px-1 border-b-2 font-medium text-sm transition-colors duration-200" data-tab="cookware">
                         Cookware
                     </button>
                     <button onclick="showTab('tools')" class="tab-button py-4 px-1 border-b-2 font-medium text-sm transition-colors duration-200" data-tab="tools">
-                        Kitchen Tools
+                        Tools
                     </button>
                     <button onclick="showTab('appliances')" class="tab-button py-4 px-1 border-b-2 font-medium text-sm transition-colors duration-200" data-tab="appliances">
                         Appliances
                     </button>
                     <button onclick="showTab('bakeware')" class="tab-button py-4 px-1 border-b-2 font-medium text-sm transition-colors duration-200" data-tab="bakeware">
                         Bakeware
-                    </button>
-                    <button onclick="showTab('storage')" class="tab-button py-4 px-1 border-b-2 font-medium text-sm transition-colors duration-200" data-tab="storage">
-                        Storage
                     </button>
                 </nav>
             </div>
@@ -404,54 +421,6 @@
                     </div>
                 </div>
 
-                <!-- Storage Tab -->
-                <div id="storage" class="tab-content hidden">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="group cursor-pointer">
-                            <div class="aspect-square bg-gray-100 rounded-lg mb-3 overflow-hidden group-hover:shadow-md transition-shadow duration-200">
-                                <div class="w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
-                                    <div class="text-4xl text-blue-400">📦</div>
-                                </div>
-                            </div>
-                            <h3 class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">Food Containers</h3>
-                            <p class="text-sm text-gray-500 mt-1">Airtight storage solutions</p>
-                            <p class="text-sm text-blue-600 font-medium mt-2">From $7.99</p>
-                        </div>
-
-                        <div class="group cursor-pointer">
-                            <div class="aspect-square bg-gray-100 rounded-lg mb-3 overflow-hidden group-hover:shadow-md transition-shadow duration-200">
-                                <div class="w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
-                                    <div class="text-4xl text-blue-400">🏺</div>
-                                </div>
-                            </div>
-                            <h3 class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">Canisters</h3>
-                            <p class="text-sm text-gray-500 mt-1">Stylish pantry organization</p>
-                            <p class="text-sm text-blue-600 font-medium mt-2">From $19.99</p>
-                        </div>
-
-                        <div class="group cursor-pointer">
-                            <div class="aspect-square bg-gray-100 rounded-lg mb-3 overflow-hidden group-hover:shadow-md transition-shadow duration-200">
-                                <div class="w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
-                                    <div class="text-4xl text-blue-400">🥤</div>
-                                </div>
-                            </div>
-                            <h3 class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">Glass Jars</h3>
-                            <p class="text-sm text-gray-500 mt-1">Versatile storage options</p>
-                            <p class="text-sm text-blue-600 font-medium mt-2">From $5.99</p>
-                        </div>
-
-                        <div class="group cursor-pointer">
-                            <div class="aspect-square bg-gray-100 rounded-lg mb-3 overflow-hidden group-hover:shadow-md transition-shadow duration-200">
-                                <div class="w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
-                                    <div class="text-4xl text-blue-400">📱</div>
-                                </div>
-                            </div>
-                            <h3 class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">Spice Racks</h3>
-                            <p class="text-sm text-gray-500 mt-1">Organized spice storage</p>
-                            <p class="text-sm text-blue-600 font-medium mt-2">From $24.99</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -482,7 +451,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Quick Links -->
                 <div>
                     <h3 class="font-semibold text-gray-900 mb-4">Quick Links</h3>
@@ -506,7 +475,7 @@
                         <li><a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">FAQ</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Newsletter -->
                 <div>
                     <h3 class="font-semibold text-gray-900 mb-4">Stay Updated</h3>
@@ -521,7 +490,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Bottom Bar -->
             <div class="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-600 text-sm">© 2025 KitchenCraft. All rights reserved.</p>
@@ -532,13 +501,86 @@
                 </div>
             </div>
         </div>
+
+        <button
+        id="scrollTopButton"
+        class="fixed bottom-4 right-4 bg-white text-primary-blue rounded-full shadow-md p-3 cursor-pointer transition-all duration-300 opacity-0 hover:bg-primary-blue hover:text-white focus:outline-none"
+        style="color: #3B82F6;"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+        </button>
+
     </footer>
+
+    <script>
+    // Up button
+    const scrollTopButton = document.getElementById('scrollTopButton');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+        scrollTopButton.classList.remove('opacity-0', 'translate-y-2');
+        scrollTopButton.classList.add('opacity-100', '-translate-y-0');
+        } else {
+        scrollTopButton.classList.remove('opacity-100', '-translate-y-0');
+        scrollTopButton.classList.add('opacity-0', 'translate-y-2');
+        }
+    });
+    </script>
+
+    <script>
+        const sliderContainer = document.getElementById('slider-container');
+        const sliderIndicators = document.getElementById('slider-indicators');
+        const slides = sliderContainer.children;
+        const indicatorButtons = sliderIndicators.children;
+        let currentIndex = 0;
+
+        function goToSlide(index) {
+            if (index < 0) {
+            currentIndex = slides.length - 1;
+            } else if (index >= slides.length) {
+            currentIndex = 0;
+            } else {
+            currentIndex = index;
+            }
+
+            sliderContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+            // Оновлюємо індикатори
+            for (let i = 0; i < indicatorButtons.length; i++) {
+            indicatorButtons[i].classList.remove('bg-primary-blue', 'active');
+            indicatorButtons[i].classList.add('bg-gray-300');
+            }
+            indicatorButtons[currentIndex].classList.add('bg-primary-blue', 'active');
+        }
+
+        function nextSlide() {
+            goToSlide(currentIndex + 1);
+        }
+
+        function previousSlide() {
+            goToSlide(currentIndex - 1);
+        }
+
+        // Автоматична зміна слайдів (опціонально)
+        setInterval(nextSlide, 3000);
+
+        // Обробники кліків для індикаторів
+        for (let i = 0; i < indicatorButtons.length; i++) {
+            indicatorButtons[i].addEventListener('click', () => {
+            goToSlide(i);
+            });
+        }
+    </script>
+
 
     <script>
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuButton.addEventListener('click', function() {
             mobileMenu.classList.toggle('hidden');
         });
