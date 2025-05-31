@@ -1,0 +1,104 @@
+<body class="bg-white min-h-screen">
+	<!-- Top Bar -->
+    <div class="bg-blue-600 text-white py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+            <!-- Left Side - Contact Info -->
+            <div class="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-6 text-sm">
+                <div class="flex items-center space-x-2 hover:text-blue-200 transition-colors">
+                    <i class="fas fa-phone text-xs"></i>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="flex items-center space-x-2 hover:text-blue-200 transition-colors">
+                    <i class="fas fa-envelope text-xs"></i>
+                    <span>info@kitchenware.com</span>
+                </div>
+            </div>
+
+            <!-- Right Side - Social Links -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-white hover:text-blue-200 transition-colors" aria-label="Instagram">
+                    <i class="fab fa-instagram text-sm"></i>
+                </a>
+                <a href="#" class="text-white hover:text-blue-200 transition-colors" aria-label="Pinterest">
+                    <i class="fab fa-pinterest text-sm"></i>
+                </a>
+                <a href="#" class="text-white hover:text-blue-200 transition-colors" aria-label="Telegram">
+                    <i class="fab fa-telegram text-sm"></i>
+                </a>
+                <a href="#" class="text-white hover:text-blue-200 transition-colors" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="./index.html" class="text-2xl font-bold text-blue-600">KitchenCraft</a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="./product.html" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Товар</a>
+                    <a href="./category.html" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Категорія</a>
+                    <a href="./about.html" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Про нас</a>
+                    <a href="./shipping.html" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Оплата</a>
+                    <a href="./blogcategory.html" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Блог</a>
+                    <a href="./contact.html" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Контакти</a>
+                </nav>
+
+                <!-- Desktop Cart & Search -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button id="openSearch" class="text-gray-600 hover:text-blue-600 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                    <button onclick="openCart()" class="text-gray-600 hover:text-blue-600 transition-colors relative">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m2.6 8L6 2H1m8 15a2 2 0 100 4 2 2 0 000-4zm8 0a2 2 0 100 4 2 2 0 000-4z"></path>
+                        </svg>
+                        <span class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="./product.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors">Товар</a>
+                <a href="./category.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors">Категорія</a>
+                <a href="./about.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors">Про нас</a>
+                <a href="./shipping.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors">Оплата</a>
+                <a href="./blogcategory.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors">Блог</a>
+                <a href="./contact.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors">Контакти</a>
+                <div class="flex items-center space-x-4 px-3 py-2">
+                    <button id="openSearch" class="text-gray-600 hover:text-blue-600 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                    <button onclick="openCart()" class="text-gray-600 hover:text-blue-600 transition-colors relative">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m2.6 8L6 2H1m8 15a2 2 0 100 4 2 2 0 000-4zm8 0a2 2 0 100 4 2 2 0 000-4z"></path>
+                        </svg>
+                        <span class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>

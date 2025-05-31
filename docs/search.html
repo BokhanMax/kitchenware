@@ -125,322 +125,295 @@
             </div>
         </div>
     </header>
-<div class="container mx-auto px-4 py-8 max-w-6xl">
-    <!-- Hero Section -->
-    <div class="text-center mb-16">
-        <h1 class="text-4xl md:text-5xl font-light text-gray-800 mb-6">About Kitchenware Collection</h1>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            For over two decades, we've been passionate about bringing professional-grade kitchen tools to home cooks, 
-            transforming everyday cooking into extraordinary culinary experiences.
-        </p>
-    </div>
+    <div class="container mx-auto px-4 py-8 max-w-7xl">
+        <!-- Search Header -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
+            <div class="flex flex-col md:flex-row gap-4 items-center">
+                <div class="flex-1 w-full">
+                    <div class="relative">
+                        <input type="text" placeholder="Search for kitchenware..." 
+                               class="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+                               value="cookware">
+                        <svg class="absolute left-4 top-3.5 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 w-full md:w-auto">
+                    Search
+                </button>
+            </div>
+        </div>
 
-    <!-- Company Description -->
-    <div class="mb-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="text-3xl font-light text-gray-800 mb-6">Our Story</h2>
-                <div class="space-y-4 text-gray-600">
-                    <p>
-                        Founded in 2001 by master chef Maria Rodriguez, Kitchenware Collection began as a small family business 
-                        with a simple mission: to make professional-quality kitchen tools accessible to every home cook.
-                    </p>
-                    <p>
-                        What started in Maria's garage has grown into a trusted brand serving over 500,000 satisfied customers 
-                        worldwide. We carefully curate each product, testing them in our own kitchens before adding them to 
-                        our collection.
-                    </p>
-                    <p>
-                        Today, we partner with renowned manufacturers and innovative designers to bring you the finest cookware, 
-                        bakeware, and kitchen accessories. Our commitment to quality, functionality, and design remains unchanged.
-                    </p>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <!-- Filters Sidebar -->
+            <div class="lg:w-64 flex-shrink-0">
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-lg font-medium text-gray-800 mb-6">Filters</h2>
+                    
+                    <!-- Category Filter -->
+                    <div class="mb-6">
+                        <h3 class="text-sm font-medium text-gray-700 mb-3">Category</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500" checked>
+                                <span class="ml-2 text-sm text-gray-600">Cookware (8)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-600">Bakeware (12)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-600">Utensils (15)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-600">Storage (6)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Price Range Filter -->
+                    <div class="mb-6">
+                        <h3 class="text-sm font-medium text-gray-700 mb-3">Price Range</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="border-gray-300 text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-600">Under $25 (9)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="border-gray-300 text-blue-600 focus:ring-blue-500" checked>
+                                <span class="ml-2 text-sm text-gray-600">$25 - $100 (18)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="border-gray-300 text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-600">$100 - $250 (12)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="border-gray-300 text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-600">Over $250 (3)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Brand Filter -->
+                    <div class="mb-6">
+                        <h3 class="text-sm font-medium text-gray-700 mb-3">Brand</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-600">ChefMaster (7)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500" checked>
+                                <span class="ml-2 text-sm text-gray-600">KitchenPro (5)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-600">CulinaryElite (4)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-600">HomeChef (8)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Clear Filters -->
+                    <button class="w-full text-blue-600 hover:text-blue-700 text-sm font-medium py-2 border border-blue-200 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+                        Clear All Filters
+                    </button>
                 </div>
             </div>
-            <div class="bg-light-blue/30 rounded-lg p-8">
-                <div class="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg flex items-center justify-center">
-                    <div class="text-center">
-                        <div class="w-20 h-20 bg-primary-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-10 h-10 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                            </svg>
-                        </div>
-                        <p class="text-gray-600 font-medium">Maria Rodriguez</p>
-                        <p class="text-gray-500 text-sm">Founder & CEO</p>
+
+            <!-- Products Grid -->
+            <div class="flex-1">
+                <!-- Results Header -->
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
+                    <div>
+                        <h1 class="text-xl font-medium text-gray-800">Search Results</h1>
+                        <p class="text-sm text-gray-600 mt-1">Showing 8 results for "cookware"</p>
                     </div>
+                    <select class="mt-4 sm:mt-0 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none">
+                        <option>Sort by: Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Customer Rating</option>
+                        <option>Newest First</option>
+                    </select>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Product 1 -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                        <div class="p-4">
+                            <div class="w-full h-48 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 text-sm">
+                                    ★★★★★
+                                </div>
+                                <span class="text-xs text-gray-500 ml-1">(24)</span>
+                            </div>
+                            <h3 class="font-medium text-gray-800 mb-1">Premium Stainless Steel Cookware Set</h3>
+                            <p class="text-sm text-gray-500 mb-3">5-piece professional grade set</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-medium text-blue-600">$189.99</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                        <div class="p-4">
+                            <div class="w-full h-48 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 text-sm">
+                                    ★★★★☆
+                                </div>
+                                <span class="text-xs text-gray-500 ml-1">(18)</span>
+                            </div>
+                            <h3 class="font-medium text-gray-800 mb-1">Non-Stick Frying Pan Set</h3>
+                            <p class="text-sm text-gray-500 mb-3">3-piece ceramic coating</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-medium text-blue-600">$79.99</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                        <div class="p-4">
+                            <div class="w-full h-48 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 text-sm">
+                                    ★★★★★
+                                </div>
+                                <span class="text-xs text-gray-500 ml-1">(31)</span>
+                            </div>
+                            <h3 class="font-medium text-gray-800 mb-1">Cast Iron Dutch Oven</h3>
+                            <p class="text-sm text-gray-500 mb-3">6-quart enameled cast iron</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-medium text-blue-600">$149.99</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                        <div class="p-4">
+                            <div class="w-full h-48 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 text-sm">
+                                    ★★★★☆
+                                </div>
+                                <span class="text-xs text-gray-500 ml-1">(12)</span>
+                            </div>
+                            <h3 class="font-medium text-gray-800 mb-1">Copper Bottom Sauce Pans</h3>
+                            <p class="text-sm text-gray-500 mb-3">Set of 3 with glass lids</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-medium text-blue-600">$129.99</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                        <div class="p-4">
+                            <div class="w-full h-48 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 text-sm">
+                                    ★★★★★
+                                </div>
+                                <span class="text-xs text-gray-500 ml-1">(7)</span>
+                            </div>
+                            <h3 class="font-medium text-gray-800 mb-1">Electric Pressure Cooker</h3>
+                            <p class="text-sm text-gray-500 mb-3">6-quart multi-function</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-medium text-blue-600">$89.99</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                        <div class="p-4">
+                            <div class="w-full h-48 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 text-sm">
+                                    ★★★★☆
+                                </div>
+                                <span class="text-xs text-gray-500 ml-1">(15)</span>
+                            </div>
+                            <h3 class="font-medium text-gray-800 mb-1">Professional Wok Set</h3>
+                            <p class="text-sm text-gray-500 mb-3">Carbon steel with accessories</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-medium text-blue-600">$99.99</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="mt-8 flex justify-center">
+                    <nav class="flex items-center space-x-2">
+                        <button class="px-3 py-2 text-sm text-gray-500 hover:text-gray-700 disabled:opacity-50" disabled>
+                            Previous
+                        </button>
+                        <button class="px-3 py-2 text-sm bg-blue-600 text-white rounded-lg">1</button>
+                        <button class="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg">2</button>
+                        <button class="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-lg">3</button>
+                        <button class="px-3 py-2 text-sm text-gray-600 hover:text-gray-800">
+                            Next
+                        </button>
+                    </nav>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Our Values -->
-    <div class="mb-16">
-        <h2 class="text-3xl font-light text-gray-800 text-center mb-12">Our Values</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="text-center">
-                <div class="w-16 h-16 bg-primary-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-8 h-8 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-medium text-gray-800 mb-3">Quality First</h3>
-                <p class="text-gray-600">Every product undergoes rigorous testing to ensure it meets our high standards for durability and performance.</p>
-            </div>
-            <div class="text-center">
-                <div class="w-16 h-16 bg-primary-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-8 h-8 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-medium text-gray-800 mb-3">Customer Love</h3>
-                <p class="text-gray-600">We're dedicated to providing exceptional service and support to help you create amazing meals at home.</p>
-            </div>
-            <div class="text-center">
-                <div class="w-16 h-16 bg-primary-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-8 h-8 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-medium text-gray-800 mb-3">Sustainability</h3>
-                <p class="text-gray-600">We prioritize eco-friendly materials and sustainable manufacturing practices for a better tomorrow.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Photo Gallery -->
-    <div class="mb-16">
-        <h2 class="text-3xl font-light text-gray-800 text-center mb-12">Behind the Scenes</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Gallery Item 1 -->
-            <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer gallery-item">
-                <div class="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary-blue/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <svg class="w-8 h-8 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
-                            </svg>
-                        </div>
-                        <p class="text-gray-600 font-medium">Our Workshop</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 2 -->
-            <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer gallery-item">
-                <div class="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary-blue/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <svg class="w-8 h-8 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                        </div>
-                        <p class="text-gray-600 font-medium">Quality Testing</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 3 -->
-            <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer gallery-item">
-                <div class="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary-blue/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <svg class="w-8 h-8 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zM4 18v-4h3v4h2v-7.5c0-1.1.9-2 2-2s2 .9 2 2V18h2v-4h3v4h1v2H3v-2h1z"/>
-                            </svg>
-                        </div>
-                        <p class="text-gray-600 font-medium">Our Team</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 4 -->
-            <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer gallery-item">
-                <div class="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary-blue/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <svg class="w-8 h-8 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
-                            </svg>
-                        </div>
-                        <p class="text-gray-600 font-medium">Product Design</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 5 -->
-            <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer gallery-item">
-                <div class="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary-blue/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <svg class="w-8 h-8 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                            </svg>
-                        </div>
-                        <p class="text-gray-600 font-medium">Packaging</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Gallery Item 6 -->
-            <div class="aspect-square bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer gallery-item">
-                <div class="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary-blue/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <svg class="w-8 h-8 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                            </svg>
-                        </div>
-                        <p class="text-gray-600 font-medium">Customer Care</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Commercial Section - Newsletter & Offers -->
-    <div class="bg-gradient-to-r from-primary-blue to-dark-blue rounded-lg p-8 mb-16 text-white">
-        <div class="text-center">
-            <h2 class="text-3xl font-light mb-4">Join Our Culinary Community</h2>
-            <p class="text-blue-100 mb-6 max-w-2xl mx-auto">
-                Get exclusive recipes, cooking tips, and be the first to know about new products and special offers.
-            </p>
-            <div class="flex flex-col sm:flex-row max-w-md mx-auto gap-4">
-                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
-                <button class="bg-white text-primary-blue px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200">
-                    Subscribe
-                </button>
-            </div>
-            <div class="mt-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-blue-100">
-                <div class="flex items-center">
-                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                    Weekly recipes
-                </div>
-                <div class="flex items-center">
-                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                    Exclusive discounts
-                </div>
-                <div class="flex items-center">
-                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                    Early access
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Awards & Recognition -->
-    <div class="mb-16">
-        <h2 class="text-3xl font-light text-gray-800 text-center mb-12">Awards & Recognition</h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="text-center">
-                <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-10 h-10 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
-                </div>
-                <h4 class="font-medium text-gray-800 mb-2">Best Kitchen Brand</h4>
-                <p class="text-gray-600 text-sm">Home & Garden Awards 2023</p>
-            </div>
-            <div class="text-center">
-                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-10 h-10 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
-                    </svg>
-                </div>
-                <h4 class="font-medium text-gray-800 mb-2">Sustainability Leader</h4>
-                <p class="text-gray-600 text-sm">Green Business Council 2023</p>
-            </div>
-            <div class="text-center">
-                <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                    </svg>
-                </div>
-                <h4 class="font-medium text-gray-800 mb-2">Customer Choice</h4>
-                <p class="text-gray-600 text-sm">E-commerce Excellence 2022</p>
-            </div>
-            <div class="text-center">
-                <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                </div>
-                <h4 class="font-medium text-gray-800 mb-2">Innovation Award</h4>
-                <p class="text-gray-600 text-sm">Kitchen Technology Forum 2022</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- FAQ Section -->
-    <div class="mb-16">
-        <h2 class="text-3xl font-light text-gray-800 text-center mb-12">Frequently Asked Questions</h2>
-        <div class="max-w-3xl mx-auto space-y-4">
-            <div class="border border-gray-200 rounded-lg">
-                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
-                    <span class="font-medium text-gray-800">What makes your products different from others?</span>
-                    <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div class="px-6 pb-4 text-gray-600 text-sm faq-content hidden">
-                    Our products undergo rigorous testing in professional kitchens and are selected based on durability, functionality, and design. We work directly with manufacturers to ensure quality standards and often feature exclusive designs not available elsewhere.
-                </div>
-            </div>
-
-            <div class="border border-gray-200 rounded-lg">
-                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
-                    <span class="font-medium text-gray-800">Do you offer warranties on your products?</span>
-                    <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div class="px-6 pb-4 text-gray-600 text-sm faq-content hidden">
-                    Yes, all our products come with manufacturer warranties ranging from 1-5 years depending on the item. We also offer our own 30-day satisfaction guarantee - if you're not completely happy with your purchase, we'll make it right.
-                </div>
-            </div>
-
-            <div class="border border-gray-200 rounded-lg">
-                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
-                    <span class="font-medium text-gray-800">Can I visit your showroom or workshop?</span>
-                    <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div class="px-6 pb-4 text-gray-600 text-sm faq-content hidden">
-                    We offer guided tours of our facility by appointment. Contact us to schedule a visit where you can see our testing kitchen, meet our team, and learn about our product development process. Tours are available Tuesday-Thursday, 10 AM - 3 PM.
-                </div>
-            </div>
-
-            <div class="border border-gray-200 rounded-lg">
-                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
-                    <span class="font-medium text-gray-800">Do you work with professional chefs?</span>
-                    <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div class="px-6 pb-4 text-gray-600 text-sm faq-content hidden">
-                    Absolutely! We collaborate with professional chefs for product testing, recipe development, and culinary content. We also offer special pricing for culinary schools and professional kitchens. Contact our commercial sales team for more information.
-                </div>
-            </div>
-
-            <div class="border border-gray-200 rounded-lg">
-                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
-                    <span class="font-medium text-gray-800">How do you ensure product sustainability?</span>
-                    <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                </button>
-                <div class="px-6 pb-4 text-gray-600 text-sm faq-content hidden">
-                    We prioritize eco-friendly materials like bamboo and recycled stainless steel. Our packaging is 90% recyclable, and we partner with manufacturers who share our commitment to sustainable practices. We also offer a trade-in program for old kitchenware.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- Footer -->
 <footer class="bg-gray-50 border-t border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

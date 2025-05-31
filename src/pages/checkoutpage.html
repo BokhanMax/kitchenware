@@ -1,0 +1,204 @@
+    <div class="container mx-auto px-4 py-8 max-w-7xl">
+        <h1 class="text-3xl font-bold text-gray-800 mb-8 text-center">Checkout</h1>
+        
+        <div class="grid lg:grid-cols-2 gap-8">
+            <!-- Left Column - Customer Information -->
+            <div class="bg-white rounded-lg shadow-sm p-6 h-fit">
+                <h2 class="text-xl font-semibold text-gray-800 mb-6">Customer Information</h2>
+                
+                <form class="space-y-6">
+                    <!-- Name Fields -->
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-primary focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-primary focus:border-transparent" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Fields -->
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                            <input type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-primary focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-primary focus:border-transparent" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Delivery Method -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-3">Delivery Method</label>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="delivery-option border-2 border-gray-200 rounded-lg p-4 cursor-pointer hover:border-blue-primary transition-colors" onclick="selectDelivery(this)">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-blue-light rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-blue-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-700">Home Delivery</p>
+                                        <p class="text-sm text-gray-500">To your address</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery-option border-2 border-gray-200 rounded-lg p-4 cursor-pointer hover:border-blue-primary transition-colors" onclick="selectDelivery(this)">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-blue-light rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-blue-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-700">Pickup Point</p>
+                                        <p class="text-sm text-gray-500">From our store</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Shipping Method -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-3">Shipping Method</label>
+                        <div class="space-y-3">
+                            <div class="shipping-option border-2 border-gray-200 rounded-lg p-4 cursor-pointer hover:border-blue-primary transition-colors" onclick="selectShipping(this)">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 bg-blue-light rounded-full flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-blue-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium text-gray-700">Standard Shipping</p>
+                                            <p class="text-sm text-gray-500">5-7 business days</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-blue-primary font-semibold">$9.99</span>
+                                </div>
+                            </div>
+                            <div class="shipping-option border-2 border-gray-200 rounded-lg p-4 cursor-pointer hover:border-blue-primary transition-colors" onclick="selectShipping(this)">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 bg-blue-light rounded-full flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-blue-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium text-gray-700">Express Shipping</p>
+                                            <p class="text-sm text-gray-500">1-2 business days</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-blue-primary font-semibold">$19.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Comment Field Toggle -->
+                    <div>
+                        <button type="button" id="commentToggle" class="text-blue-primary hover:text-blue-dark font-medium flex items-center space-x-2 transition-colors">
+                            <span>Add a comment</span>
+                            <svg class="w-4 h-4 transform transition-transform" id="commentArrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="commentField" class="hidden mt-3">
+                            <textarea class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-primary focus:border-transparent" rows="3" placeholder="Special instructions or comments..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Promo Code -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Promo Code</label>
+                        <div class="flex gap-2">
+                            <input type="text" class="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-primary focus:border-transparent" placeholder="Enter promo code">
+                            <button type="button" class="px-4 py-2 bg-blue-primary text-white rounded-md hover:bg-blue-dark transition-colors">Apply</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Right Column - Order Summary -->
+            <div class="bg-white rounded-lg shadow-sm p-6 h-fit">
+                <h2 class="text-xl font-semibold text-gray-800 mb-6">Order Summary</h2>
+                
+                <!-- Products -->
+                <div class="space-y-4 mb-6">
+                    <div class="flex items-center space-x-4 pb-4 border-b border-gray-100">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%23f3f4f6'/%3E%3Cpath d='M20 25h40v30H20z' fill='%233b82f6' opacity='0.3'/%3E%3Ctext x='40' y='45' text-anchor='middle' fill='%233b82f6' font-size='12'%3EChef's Pan%3C/text%3E%3C/svg%3E" alt="Chef's Pan" class="w-16 h-16 rounded-md object-cover">
+                        <div class="flex-1">
+                            <h3 class="font-medium text-gray-800">Professional Chef's Pan</h3>
+                            <p class="text-sm text-gray-500">Non-stick, 12 inch</p>
+                            <p class="text-sm text-gray-500">Qty: 1</p>
+                        </div>
+                        <span class="font-semibold text-gray-800">$89.99</span>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4 pb-4 border-b border-gray-100">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%23f3f4f6'/%3E%3Cpath d='M15 30h50v25H15z' fill='%233b82f6' opacity='0.3'/%3E%3Ctext x='40' y='47' text-anchor='middle' fill='%233b82f6' font-size='11'%3EKnife Set%3C/text%3E%3C/svg%3E" alt="Knife Set" class="w-16 h-16 rounded-md object-cover">
+                        <div class="flex-1">
+                            <h3 class="font-medium text-gray-800">Premium Knife Set</h3>
+                            <p class="text-sm text-gray-500">5-piece set with block</p>
+                            <p class="text-sm text-gray-500">Qty: 1</p>
+                        </div>
+                        <span class="font-semibold text-gray-800">$149.99</span>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4 pb-4 border-b border-gray-100">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%23f3f4f6'/%3E%3Ccircle cx='40' cy='40' r='20' fill='%233b82f6' opacity='0.3'/%3E%3Ctext x='40' y='45' text-anchor='middle' fill='%233b82f6' font-size='10'%3EMixing Bowl%3C/text%3E%3C/svg%3E" alt="Mixing Bowl" class="w-16 h-16 rounded-md object-cover">
+                        <div class="flex-1">
+                            <h3 class="font-medium text-gray-800">Stainless Steel Mixing Bowl</h3>
+                            <p class="text-sm text-gray-500">Large size, 5L capacity</p>
+                            <p class="text-sm text-gray-500">Qty: 2</p>
+                        </div>
+                        <span class="font-semibold text-gray-800">$59.98</span>
+                    </div>
+                </div>
+                
+                <!-- Order Totals -->
+                <div class="space-y-3 border-t border-gray-200 pt-4">
+                    <div class="flex justify-between text-gray-600">
+                        <span>Subtotal</span>
+                        <span>$299.96</span>
+                    </div>
+                    <div class="flex justify-between text-gray-600">
+                        <span>Delivery</span>
+                        <span id="deliveryCost">$9.99</span>
+                    </div>
+                    <div class="flex justify-between text-gray-600">
+                        <span>Tax</span>
+                        <span>$24.00</span>
+                    </div>
+                    <div class="border-t border-gray-200 pt-3">
+                        <div class="flex justify-between text-lg font-bold text-gray-800">
+                            <span>Total</span>
+                            <span id="totalAmount">$333.95</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Checkout Button -->
+                <button onclick="location.href='./success.html';" class="w-full mt-6 bg-blue-primary text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-dark transition-colors">
+                    Complete Order
+                </button>
+                
+                <!-- Security Notice -->
+                <div class="mt-4 flex items-center justify-center space-x-2 text-sm text-gray-500">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                    <span>Secure checkout protected by SSL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    

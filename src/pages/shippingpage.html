@@ -1,0 +1,262 @@
+
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Page Header -->
+        <div class="mb-12 text-center">
+            <h1 class="text-3xl md:text-4xl font-light text-gray-800 mb-4">Shipping & Delivery</h1>
+            <p class="text-gray-600 text-lg">Fast, reliable delivery to bring your kitchen essentials home</p>
+        </div>
+
+        <!-- Shipping Calculator -->
+        <div class="bg-light-blue/30 rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-medium text-gray-800 mb-6">Calculate Shipping Cost</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">ZIP Code</label>
+                    <input type="text" placeholder="Enter ZIP code" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Weight (lbs)</label>
+                    <input type="number" placeholder="5.0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent">
+                </div>
+                <div class="flex items-end">
+                    <button class="w-full bg-primary-blue text-white py-2 px-4 rounded-lg hover:bg-dark-blue transition-colors duration-200">
+                        Calculate
+                    </button>
+                </div>
+            </div>
+            <div id="shipping-result" class="mt-4 p-4 bg-white rounded-lg border border-gray-200 hidden">
+                <div class="flex justify-between items-center">
+                    <span class="text-gray-700">Estimated shipping cost:</span>
+                    <span class="text-xl font-semibold text-primary-blue">$12.99</span>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Delivery in 3-5 business days</p>
+            </div>
+        </div>
+
+        <!-- Shipping Options -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-light text-gray-800 mb-6">Shipping Options</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Standard Shipping -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary-blue/10 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-800">Standard Shipping</h3>
+                            <p class="text-primary-blue font-semibold">$5.99 - $12.99</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Reliable delivery in 5-7 business days. Perfect for regular orders.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Tracking included</li>
+                        <li>• Insurance up to $100</li>
+                        <li>• Signature not required</li>
+                    </ul>
+                </div>
+
+                <!-- Express Shipping -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 relative">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-primary-blue text-white text-xs px-2 py-1 rounded-full">Popular</span>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary-blue/10 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-800">Express Shipping</h3>
+                            <p class="text-primary-blue font-semibold">$15.99 - $24.99</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Fast delivery in 2-3 business days. Great for urgent needs.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Priority handling</li>
+                        <li>• Real-time tracking</li>
+                        <li>• Insurance up to $500</li>
+                    </ul>
+                </div>
+
+                <!-- Overnight Shipping -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary-blue/10 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-800">Overnight Shipping</h3>
+                            <p class="text-primary-blue font-semibold">$29.99 - $49.99</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Next business day delivery. For when you need it now.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Next day delivery</li>
+                        <li>• Signature required</li>
+                        <li>• Full insurance included</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Free Shipping Info -->
+        <div class="bg-gradient-to-r from-primary-blue to-dark-blue rounded-lg p-6 mb-8 text-white">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="text-xl font-medium mb-2">Free Standard Shipping</h3>
+                    <p class="text-blue-100">On orders over $75 within the continental US</p>
+                </div>
+                <div class="text-3xl font-bold">$75+</div>
+            </div>
+        </div>
+
+        <!-- Delivery Information -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <!-- Delivery Areas -->
+            <div>
+                <h2 class="text-2xl font-light text-gray-800 mb-6">Delivery Areas</h2>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-3 h-3 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <div>
+                            <h4 class="font-medium text-gray-800">Continental United States</h4>
+                            <p class="text-gray-600 text-sm">Standard shipping to all 48 states</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-3 h-3 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <div>
+                            <h4 class="font-medium text-gray-800">Alaska & Hawaii</h4>
+                            <p class="text-gray-600 text-sm">Extended delivery time, additional fees apply</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-3 h-3 bg-primary-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <div>
+                            <h4 class="font-medium text-gray-800">International</h4>
+                            <p class="text-gray-600 text-sm">Available to select countries, customs fees may apply</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delivery Timeline -->
+            <div>
+                <h2 class="text-2xl font-light text-gray-800 mb-6">Delivery Timeline</h2>
+                <div class="space-y-4">
+                    <div class="border-l-4 border-primary-blue pl-4">
+                        <h4 class="font-medium text-gray-800">Order Processing</h4>
+                        <p class="text-gray-600 text-sm">1-2 business days for order verification and packaging</p>
+                    </div>
+                    <div class="border-l-4 border-gray-300 pl-4">
+                        <h4 class="font-medium text-gray-800">In Transit</h4>
+                        <p class="text-gray-600 text-sm">Tracking information provided once shipped</p>
+                    </div>
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h4 class="font-medium text-gray-800">Delivered</h4>
+                        <p class="text-gray-600 text-sm">Confirmation email sent upon successful delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Delivery Options -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-light text-gray-800 mb-6">Special Delivery Options</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-primary-blue/10 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-medium text-gray-800">Scheduled Delivery</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-3">Choose a specific delivery date that works for you</p>
+                    <p class="text-primary-blue font-semibold">+ $5.00</p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-primary-blue/10 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-5 h-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-medium text-gray-800">Signature Required</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-3">Ensure secure delivery with required signature</p>
+                    <p class="text-primary-blue font-semibold">+ $3.00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-light text-gray-800 mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                        <span class="font-medium text-gray-800">How can I track my order?</span>
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-4 text-gray-600 text-sm faq-content hidden">
+                        Once your order ships, you'll receive a tracking number via email. You can use this number to track your package on our website or the carrier's website.
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                        <span class="font-medium text-gray-800">What if I'm not home for delivery?</span>
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-4 text-gray-600 text-sm faq-content hidden">
+                        Most packages can be left at your door unless signature is required. For valuable items, we recommend choosing signature required or scheduled delivery options.
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 faq-toggle">
+                        <span class="font-medium text-gray-800">Do you ship internationally?</span>
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-4 text-gray-600 text-sm faq-content hidden">
+                        Yes, we ship to select international destinations. Shipping costs and delivery times vary by location. Additional customs fees may apply and are the responsibility of the customer.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="bg-light-blue/30 rounded-lg p-6 text-center">
+            <h3 class="text-lg font-medium text-gray-800 mb-2">Need Help with Shipping?</h3>
+            <p class="text-gray-600 mb-4">Our customer service team is here to assist you</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span class="text-gray-700">1-800-KITCHEN</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-primary-blue mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span class="text-gray-700">shipping@kitchenware.com</span>
+                </div>
+            </div>
+        </div>
+    </div>

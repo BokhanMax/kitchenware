@@ -1,0 +1,12 @@
+{
+  "name": "posud_layout",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "gulp index product category checkout blogcategory blogpost success shipping 404 search contact about"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-file-include": "^2.3.0"
+  }
+}
