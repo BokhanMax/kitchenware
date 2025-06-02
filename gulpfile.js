@@ -7,7 +7,7 @@ gulp.task('index', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 gulp.task('product', function() {
@@ -16,7 +16,7 @@ gulp.task('product', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 gulp.task('category', function() {
@@ -25,7 +25,7 @@ gulp.task('category', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 gulp.task('checkout', function() {
@@ -34,7 +34,7 @@ gulp.task('checkout', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 gulp.task('blogcategory', function() {
@@ -43,7 +43,7 @@ gulp.task('blogcategory', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 gulp.task('blogpost', function() {
@@ -52,7 +52,7 @@ gulp.task('blogpost', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 gulp.task('success', function() {
@@ -61,7 +61,7 @@ gulp.task('success', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 gulp.task('shipping', function() {
@@ -70,7 +70,7 @@ gulp.task('shipping', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 gulp.task('404', function() {
@@ -79,7 +79,7 @@ gulp.task('404', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 gulp.task('search', function() {
@@ -88,7 +88,7 @@ gulp.task('search', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 gulp.task('contact', function() {
@@ -97,7 +97,7 @@ gulp.task('contact', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 gulp.task('about', function() {
@@ -106,7 +106,7 @@ gulp.task('about', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./html'));
 });
 
 //exports.default = allinone
